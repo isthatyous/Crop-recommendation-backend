@@ -31,6 +31,12 @@ class CropRecommendationInput(BaseModel):
     ph: float
     rainfall: float
 
+
+    
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to the API"}
+
 # Endpoint to get crop recommendations
 @app.post("/predict")
 async def predict(input_data: CropRecommendationInput):
