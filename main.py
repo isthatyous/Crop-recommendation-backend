@@ -16,7 +16,8 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://crop-recommendation-frontend-dsarzdekl-isthatyous-projects.vercel.app/"], 
+    allow_origins=["https://crop-recommendation-frontend-dsarzdekl-isthatyous-projects.vercel.app/",
+    "https://crop.shivamcodes.me"], 
     allow_credentials=True,
     allow_methods=["*"],  # Allows all HTTP methods (GET, POST, etc.)
     allow_headers=["*"],  # Allows all headers
